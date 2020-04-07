@@ -1,3 +1,5 @@
+package uk.ac.cam.amw223.Analyser;
+
 import javax.swing.*;
 
 public class Driver
