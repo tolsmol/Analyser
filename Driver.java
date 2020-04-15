@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Driver
 {
@@ -12,11 +13,32 @@ public class Driver
             new Mood ("Social"),
             new Mood ("Energy")
         };
+
+        //window
         JFrame window = new JFrame();
-        window.setSize(1000,300);
+        JPanel panel = new JPanel();
+        window.setSize(1000,700);
         window.setTitle("Analyser");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setContentPane(panel);
+        //panel
+        panel.setLayout(new BorderLayout());
+        //top
+        JLabel title = new JLabel("Task List");
+        panel.add("North", title);
+        // //bottom
+        // panel.add("South");
+        // //right
+        // panel.add("East");
+        // //left
+        // panel.add("West");
+        //center
+        JPanel pnlTaskList = new JPanel();
+        GridLayout layTaskList = new GridLayout(3,10);
+        pnlTaskList.setLayout(layTaskList);
+        panel.add("Center", pnlTaskList);
+
         window.setVisible(true);
-        
     }
+
 }
