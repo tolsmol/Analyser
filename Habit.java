@@ -1,4 +1,4 @@
-package uk.ac.cam.amw223.Analyser;
+package emyflorence.Analyser;
 
 public class Habit
 {

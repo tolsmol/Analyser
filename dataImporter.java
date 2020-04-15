@@ -1,4 +1,4 @@
-package uk.ac.cam.amw223.Analyser;
+package emyflorence.Analyser;
 
 import java.io.IOException;
 import java.nio.charset.MalformedInputException;
