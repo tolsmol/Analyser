@@ -9,7 +9,7 @@ public class Driver
     {
         //Tracking
         Mood[] moods = new Mood[] {
-            new Mood ("Happiness"),
+            new Mood("Happiness"),
             new Mood ("Calmness"),
             new Mood ("Fulfillment"),
             new Mood ("Social"),

@@ -1,6 +1,6 @@
 package emyflorence.Analyser;
 import java.util.ArrayList; // import the ArrayList class
-
+import java.time.*;
 public class Task {
     int id;
     String name;
@@ -26,8 +26,8 @@ public class Task {
         INCOMPLETE,
         WAITING,
         THINKING,
-        IN PROGRESS,
-        NEARLY FINISHED,
+        IN_PROGRESS,
+        NEARLY_FINISHED,
         DONE,
         SOMEDAY
     }
