@@ -1,5 +1,13 @@
 # IntelliJ project files
 *.iml
 .idea/
+
 # VS Code config files
 .vscode/
+
+# macOS directory information
+.DS_Store
+
+# compiled class files
+*.class
+out/
