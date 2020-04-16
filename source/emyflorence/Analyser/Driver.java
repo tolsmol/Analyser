@@ -8,13 +8,15 @@ public class Driver
     public static void main(String[] args)
     {
         //Tracking
-        Mood[] moods = new Mood[] {
-            new Mood("Happiness"),
-            new Mood ("Calmness"),
-            new Mood ("Fulfillment"),
-            new Mood ("Social"),
-            new Mood ("Energy")
-        };
+        // Mood[] moods = new Mood[] {
+        //     new Mood("Happiness"),
+        //     new Mood ("Calmness"),
+        //     new Mood ("Fulfillment"),
+        //     new Mood ("Social"),
+        //     new Mood ("Energy")
+        // };
+
+        TaskList taskList = new TaskList();
 
         //window
         JFrame window = new JFrame();
@@ -26,7 +28,8 @@ public class Driver
         //panel
         panel.setLayout(new BorderLayout());
         //top
-        JLabel title = new JLabel("Task List");
+        JLabel title = new JLabel("Title");
+        title.setText(taskList.title);
         panel.add("North", title);
         // //bottom
         // panel.add("South");
@@ -35,10 +38,7 @@ public class Driver
         // //left
         // panel.add("West");
         //center
-        JPanel pnlTaskList = new JPanel();
-        GridLayout layTaskList = new GridLayout(3,10);
-        pnlTaskList.setLayout(layTaskList);
-        panel.add("Center", pnlTaskList);
+        panel.add("Center", taskList.panel);
 
         window.setVisible(true);
     }

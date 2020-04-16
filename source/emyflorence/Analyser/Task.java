@@ -32,4 +32,8 @@ public class Task {
         SOMEDAY
     }
 
+    public Task(String name) {
+        this.name = name;
+    }
+
 }
